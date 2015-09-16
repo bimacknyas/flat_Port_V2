@@ -169,13 +169,17 @@ header{
   transition-duration: 490ms;
   transform: translate3d(-440px, 0, 0);
 }
-
-section{
+/*************************/
+/**********HEROUNIT*******/
+/*************************/
+#heroUnit{
 	clear: both;
 	background: url(image/heroUnit.jpg) no-repeat 50% top;
 	height: 570px;
-	padding-top: 11%;
 	text-align: center;
+}
+#heroWrap{
+	padding-top: 11%;
 }
 #focus{	
 	font-family: "RussoOne";
@@ -332,4 +336,76 @@ section{
 }
 .social .gthb:hover{
 	background-position: -226px -50px;
+}
+/*************************/
+/**********ABOUTME********/
+/*************************/
+#about{
+	width: 100%;
+	height: 967px;
+}
+#aboutWrap{
+	width: 100%;
+	height: 517px;
+	text-align: center;
+}
+.avatar{
+	float: left;
+	width: 32%;
+	margin-left: 15%;
+}
+.abtDesc{
+	float: right;
+	width: 32%;
+	margin-right: 17%;
+	margin-top: 5%;
+}
+#about h3{
+	font-family:"RussoOne";
+	font-size: 26px;
+	font-weight: normal;
+	color: #6b6b6b;
+}
+.abtDesc p{
+	font-family: "basic";
+	font-size: 24px;
+	font-weight: normal;
+	color: #6b6b6b;
+	text-align: left;
+	margin-bottom: 9%;
+}
+#skill .skillIcon{
+	height: 122px;
+	width: 137px;
+    display: inline-block;
+    background: transparent url(image/skillSprite.png) no-repeat;
+}
+#skill .design{
+	background-position: 0px 0px;
+}
+#skill .ux{
+	background-position: -144px 0px;
+}
+#skill .ui{
+	background-position: -317px 0px;
+}
+#expWrap{
+	text-align: center;
+	height: 303px;
+	width: 100%;
+	box-shadow: 0 -3px 5px rgba(0,0,0,0.3);
+	position: relative;
+	margin-top: 2%;
+}
+#tools{
+	height: 33%;
+	background-color: #1abd9a;
+}
+#technology{
+	height: 33%;
+	background-color: #1a82ba;
+}
+#device{
+	height: 33%;
+	background-color: #2fcc70;
 }
