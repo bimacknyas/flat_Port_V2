@@ -3,7 +3,7 @@
 <head>
 	<title>Portfolio</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css" />	
+	<link rel="stylesheet" href="style.css" />		
 </head>
 <body>
 	<header>
@@ -11,7 +11,7 @@
 			<div id="logo">
 				MRP<span id="bounce"></span>
 			</div>
-			<nav class="menu">
+			<nav class="brgrmenu">
 				<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
 				<label class="menu-open-button" for="menu-open">
 					<span class="hamburger hamburger-1"></span>
@@ -58,7 +58,7 @@
 			<div class="abtDesc">
 				<p>Hi I'm a Product Designer based in Bengaluru. I build awesome thingsfor web and mobile. Currently I am working
 				as a UX Developer at Infosys</p>
-				<p>"My Goal is to ship funny and beautiful experiances"</p>
+				<p>"My Goal is to ship funny and beautiful experiences"</p>
 				<div id="skill">
 					<span class="skillIcon design"></span>
 					<span class="skillIcon ux"></span>
@@ -68,29 +68,101 @@
 		</div>
 		<div id="expWrap">
 			<div id="tools">
-				<span class="expText">Tools<i>I use</i></span>
-				<div class="expWraIcon">
+				<span class="expText">Tools<i>i use</i></span>
+				<div class="expWrapIcon">
 					<span class="expIcon ai"></span>
 					<span class="expIcon ps"></span>
 					<span class="expIcon fw"></span>
 				</div>
 			</div>
 			<div id="technology">
-				<span class="expText">Technologies<i>I love</i></span>
-				<div class="expWraIcon">
+				<span class="expText">Technologies<i>i love</i></span>
+				<div class="expWrapIcon">
 					<span class="expIcon html"></span>
 					<span class="expIcon css"></span>
 					<span class="expIcon js"></span>
 				</div>
 			</div>
 			<div id="device">
-				<span class="expText">Devices<i>I work</i></span>
-				<div class="expWraIcon">
-					<span class="expIcon html"></span>
-					<span class="expIcon css"></span>
-					<span class="expIcon js"></span>
+				<span class="expText">Devices<i>i work</i></span>
+				<div class="expWrapIcon">
+					<span class="expIcon desk"></span>
+					<span class="expIcon tab"></span>
+					<span class="expIcon mob"></span>
 				</div>
 			</div>
 		</div>
+		<div id="hubbies">
+			When you can't find my behind my Asus Notebook, You'll find me below
+			<div class="hImage">
+				<span class="hubIcon music"></span>
+				<span class="hubIcon roaming"></span>
+				<span class="hubIcon cooking"></span>
+			</div>
+		</div>
 	</section>
+	<section id="process">
+		<h3>Work Process</h3>
+		<div id="wrapper">			
+			<!-- 	INPUT FOR BUTTON SELECT SLIDE -->
+			<input type="radio" name="next" id="slide1" checked>
+			<input type="radio" name="next" id="slide2">
+			<input type="radio" name="next" id="slide3">
+			<input type="radio" name="next" id="slide4">
+
+			<!-- 	INPUT FOR BUTTON STOP&PLAY -->
+			<input type="radio" name="sto" id="play">
+			<input type="radio" name="sto" id="stop" checked>
+			<input type="radio" name="sto" id="pause">
+
+			<div class="brain">
+				<label for="slide4" class="int manage_one left"></label>
+				<label for="slide2" class="int manage_one right"></label>
+				<label for="slide1" class="int manage_two left"></label>
+				<label for="slide3" class="int manage_two right"></label>
+				<label for="slide2" class="int manage_tre left"></label>
+				<label for="slide4" class="int manage_tre right"></label>
+				<label for="slide3" class="int manage_for left"></label>
+				<label for="slide1" class="int manage_for right"></label>
+					<!-- CONTAINER -->
+					<div class="cont">
+						<!-- BUTTON PLAY&STOP -->
+						<div class="menu">
+							<label for="stop" class="butStop" onclick=""></label>
+							<label for="play" class="butPlay" onclick=""></label>
+							<label for="pause" class="butPause" onclick=""></label>
+							<span class="hideStop"></span>
+							<span class="hidePlay"></span>
+							<span class="hidePause"></span>
+							<span class="tooltip"><p>Control buttons!</p></span>
+						</div>
+						<!-- IMAGE -->
+						<div class="image">
+							<img src="image/process1.png" class="oneP" 	alt="ux">
+							<img src="image/process2.png" class="twoP" 	alt="ui">
+							<img src="image/process3.png" class="threeP"  alt="dev">
+						</div>
+
+						<!-- ANIMATION LINE -->
+						<div class="aline">
+							<div class="line"></div>
+							<div class="bord"><span></span></div>
+							<div class="bord"><span></span></div>
+							<div class="bord"><span></span></div>
+							<div class="bord"><span></span></div>
+						</div> 
+
+						<!-- BOTTOM LINE -->
+						<div class="but">
+							<label for="slide1" class="select_but select1" onclick=""><div></div></label>
+							<label for="slide2" class="select_but select2" onclick=""><div></div></label>
+							<label for="slide3" class="select_but select3" onclick=""><div></div></label>
+							<label for="slide4" class="select_but select4" onclick=""><div></div></label>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
 </body>
