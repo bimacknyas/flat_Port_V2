@@ -33,7 +33,7 @@ header{
 }
 .headWrap{
 	padding: 2%;
-	padding-bottom: 5%;
+	height: 37px;
 }
 #logo{
 	float: left;
@@ -185,9 +185,10 @@ header{
 #focus{	
 	font-family: "RussoOne";
 	border: 10px solid #ffffff;
-	padding: 22px;
+	padding: 22px 30px 22px 22px;
     width: 35%;
 	margin: 0px auto;
+	border-radius: 4px;
 }
 #focus h2{
 	font-size: 34px;
@@ -656,38 +657,6 @@ header{
 	background: transparent url(http://s019.radikal.ru/i621/1310/ed/b9bfce7c1a1a.png) 0 0 no-repeat;
 	background-size: 100%;
 }
-/*BOTTOM LINE*/
-.aline{
-	position: absolute;
-	visibility: hidden;
-	width: 60%;
-	height: 10px;
-}
-.line{
-	position: absolute;
-	height: 10px;
-	background: #222;
-	opacity: .3;
-	z-index: 1;
-}
-.aline > .bord{
-	display: inline-block;
-	float: left;
-	width: 25%;
-	height: 10px;
-	border-bottom: 2px solid #e0e0e0;
-}
-.bord > span{
-	width: 2px;
-	height: 10px;
-	display: inline-block;
-	float: right;
-	background-color: #e0e0e0;
-}
-.bord:last-child > span{
-	width: 0;
-	height: 0;
-}
 
 /*PAGGINATION*/
 .but {
@@ -758,9 +727,6 @@ header{
 }
 
 /*INPUT PLAY&STOP&PAUSE CHECKED*/
-#play:checked ~ .brain .cont .menu{
-	margin-top: 16px;
-}
 #play:checked ~ .brain .cont .menu .hidePause{
 	visibility: hidden;
 }
@@ -796,10 +762,10 @@ header{
 	-webkit-animation: sel3 16s linear infinite;
 	animation: sel3 16s linear infinite;
 }
-#play:checked ~ .brain .cont .but .select4 > div{
+/* #play:checked ~ .brain .cont .but .select4 > div{
 	-webkit-animation: sel4 16s linear infinite;
 	animation: sel4 16s linear infinite;
-}
+} */
 
 #stop:checked ~ .brain .cont .menu .butPause{
 	visibility: hidden;
@@ -810,11 +776,6 @@ header{
 #stop:checked ~ .brain .cont .menu .hideStop{
 	visibility: visible;
 }
-/*#stop:checked ~ .brain .cont .aline .line{
-	width: 0px;
-	-webkit-animation:none;
-	animation:none;
-}*/
 #pause:checked ~ .brain .cont .menu .butPause{
 	visibility: hidden;
 }
@@ -857,12 +818,12 @@ header{
 	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
 }
-#pause:checked ~ .brain .cont .but .select4 > div{
+/* #pause:checked ~ .brain .cont .but .select4 > div{
 	-webkit-animation: sel4 16s linear infinite;
 	animation: sel4 16s linear infinite;
 	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
-}
+} */
 /*INPUT MANAGE&PAGINATION CHECKED*/
 #slide1:checked ~ .brain .cont .but .select1 > div{display: block;}
 #slide1:checked ~ .brain .manage_one{display: inline-block;}
@@ -875,9 +836,9 @@ header{
 #slide3:checked ~ .brain .manage_tre{display: inline-block;}
 #slide3:checked ~ .brain .cont .but .select3 > div{display: block;}
 
-#slide4:checked ~ .brain .cont .image{ margin-left:-300%;}
+/* #slide4:checked ~ .brain .cont .image{ margin-left:-300%;} */
 #slide4:checked ~ .brain .manage_for{display: inline-block;}
-#slide4:checked ~ .brain .cont .but .select4 > div{display: block;}
+#slide4:checked ~ .brain .cont .but .select4 > div{display: none;}
 
 /*ANIMATION*/
 	/*ANIMATION TOOLTIP*/
@@ -947,13 +908,13 @@ header{
 	75%{opacity: 0;}
 	100%{opacity: 0;}
 }
-@-webkit-keyframes sel4{
+/* @-webkit-keyframes sel4{
 	0%{opacity: 0}
 	74.9%{opacity: 0}
 	75%{opacity: 1;}
 	99.9%{opacity: 1;}
 	100%{opacity: 0;}
-}
+} */
 	/*ANIMATION MANAGE*/
 @-webkit-keyframes anim-right{
 	0%{background-position: 0px 0px;}
@@ -1009,13 +970,6 @@ header{
 	75%{opacity: 0;}
 	100%{opacity: 0;}
 }
-@keyframes sel4{
-	0%{opacity: 0;}
-	74.9%{opacity: 0;}
-	75%{opacity: 1; width: 10px; height: 10px; border-radius: 5px;}
-	99.9%{opacity: 1; width: 10px; height: 10px; border-radius: 5px;}
-	100%{opacity: 0;}
-}
 @keyframes anim-right{
 	0%{background-position: 0px 0px;}
 	49.9%{background-position: 64px 0px;}
@@ -1067,4 +1021,167 @@ header{
 	width: 34px;
 	height: 34px;
 	}
+}
+/*************************/
+/**********PROJECT********/
+/*************************/
+#projects{
+	width: 100%;
+	text-align: center;	
+}
+#Projects h2{	
+	color:#6b6b6b;
+	font-family:"RussoOne";
+	font-size: 26px;
+	font-weight: normal;
+	text-align: center;
+	padding: 1% 0;
+}
+#Projects .controls{
+  text-align: center;
+}
+#Projects label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+#Projects button{
+	display: inline-block;
+	padding: .4em .8em;
+	margin: 0 .4em .6em 0;
+	background: #fce051;
+	border: 0;
+	color: #6b6b6b;
+	font-size: 16px;
+	font-weight: 300;
+	border-radius: 4px;
+	cursor: pointer;  
+	font-family:"basic";
+}
+
+#Projects button.active{
+  background: #68b8c4;
+  color: #ffffff;
+}
+
+#Projects button:focus{
+  outline: 0 none;
+}
+
+#Projects button + label{
+  margin-left: 1em;
+}
+
+#Projects .container{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  -webkit-backface-visibility: hidden;
+}
+
+#Projects .container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container .mix{
+  text-align: left;
+  background: #03899c;
+  margin-bottom: 2%;
+  display: none;
+}
+
+#Projects .container .mix.category1{
+  border-top: 2px solid limegreen;
+}
+
+#Projects .container .mix.category2{
+  border-top: 2px solid yellow;
+}
+
+#Projects .container .mix.category3{
+  border-top: 2px solid red;
+}
+
+#Projects .container .mix.category4{
+  border-top: 2px solid blue;
+}
+
+#Projects .container .mix.category5{
+  border-top: 2px solid pink;
+}
+
+#Projects .container .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+#Projects .container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+    width: 23.5%;
+  }
+}
+/*************************/
+/**********CONTACT********/
+/*************************/
+#contact{
+	clear: both;
+	background: url(image/cont.jpg) no-repeat 50% top;
+	height: 660px;
+	text-align: center;
+	font-family: "RussoOne";
+	font-size: 34px;
+	color: #ffffff;
+}
+.cntWrap{
+	padding-top: 8%;
+}
+.mail p{
+	font-family: "basic";
+}
+.mail a{
+	opacity: 1;
+}
+.mail p:first-child{
+	height: 5%;
+	width: 20%;
+	background: #ffffff;
+	margin: 1em auto;
+	color: #1a82ba;
+	font-size: 24px;
+	padding: 0.2em;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.mail p:nth-child(2) {
+	border-bottom: 2px solid #ffffff;
+	width: 34%;
+	margin: 0 auto;
+	padding-bottom: 7px; 
 }
